@@ -8,13 +8,13 @@
 
 cestes_files <- list.files(path = "data/raw/cestes",
                            pattern = "csv$",
-                           full.names = TRUE)
+                           full.names = TRUE) #Se buscan todos los nombres de los archivos csv
 
 cestes_names <- gsub(".csv", "", basename(cestes_files), fixed = TRUE)
 
 envir <- read.csv(cestes_files[3])
 
-data_list <- lapply(cestes_files, read.csv)
+data_list <- lapply(cestes_files, read.csv) #se aplica la función read.csv a TODOS los archivos en cestes_file
 names(data_list) <- cestes_names
 
 length(data_list)
@@ -22,17 +22,17 @@ length(data_list)
 # Inspecting data
 head(data_list$envir)
 dim(data_list$envir)
-summary(envir$envir)
+summary(data_list$envir)
 
 # Output 1: summary table ------------------------------------------------------
 
 # Creating summary table for all environmental variables
 sd(envir$Clay)
-envir_mean <- apply(envir[, -1], 2, mean)
+envir_mean <- apply(envir[, -1], 2, mean) #data, refers to columns (1 for arrows), function to apply
 envir_sd <- apply(envir[, -1], 2, sd)
 
 # Creating a function in R -----------------------------------------------------
-std <- function(x, round = FALSE, ...) {
+std <- function(x, round = FALSE, ...) { #... puedo agregarle más parámetros para la función "round" que también tiene los ...,
   std <- sd(x) / sqrt(length(x))
   if (round) std <- round(std, ...)
   return(std)
@@ -88,3 +88,4 @@ comm_df$TaxonName <- NA
 for (sp in rownames(comm_df)) {
   comm_df[sp, "TaxonName"] <- data_list$splist$TaxonName[data_list$splist$TaxCode == sp]
 }
+

@@ -3,7 +3,7 @@
 .Rhistory
 .RData
 .Ruserdata
-
+.RDataTmp
 
 #Avoid adding html
-*.html
+#*.html

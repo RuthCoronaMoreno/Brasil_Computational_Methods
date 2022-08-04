@@ -1,8 +1,15 @@
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Script to solve Ordinary Differential Equations (using ode)
+# For more explanations follow:
+# https://scientific-computing.netlify.app/09_population_models.html
+# --------------------------------------------------#
+
 library(deSolve)
 library(ggplot2) # because we will plot things
 library(tidyr) # because we will manipulate some data
 
-#Check website https://scientific-computing.netlify.app/09_population_models.html
 #----------------------------------------
 # Creating a function for logistic growth
 #----------------------------------------

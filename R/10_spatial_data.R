@@ -1,6 +1,8 @@
-########################################
-#Introduction to spatial data in R
-########################################
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Topic: Introduction to spatial data in R
+# --------------------------------------------------#
 
 library(sf)
 library(tmap)

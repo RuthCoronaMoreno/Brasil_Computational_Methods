@@ -1,6 +1,14 @@
-###############################################
-#Introduction to biological diversity analyses
-###############################################
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Topic: Introduction to biological diversity analyses
+# --------------------------------------------------#
+
+#Biodiversity is a complex multifaceted concept that includes scales in space and time, and entities s.a. species, trait and evolutionary units.
+#Diveristy indexes have a richness and evenness components
+#Must increases when more new elements are added to the sample
+#Some indices are proportional to sample size: a mathematical artifact
+#Must be maximal wen all the elements have the same frequency (eveness)
 
 #Data
 comm <- read.csv("data/raw/cestes/comm.csv")

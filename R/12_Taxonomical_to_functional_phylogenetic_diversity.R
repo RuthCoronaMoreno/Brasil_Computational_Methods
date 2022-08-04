@@ -1,7 +1,8 @@
-###############################################################
-#From taxonomical to functional and phylogenetic diversity in R
-###############################################################
-
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Topic: From taxonomical to functional and phylogenetic diversity in R
+# --------------------------------------------------#
 
 library(vegan)
 library(cluster)

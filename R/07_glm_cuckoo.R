@@ -1,3 +1,9 @@
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Script to perform Generalize Linear Models
+# --------------------------------------------------#
+
 library(bbmle)
 library(ggplot2)
 

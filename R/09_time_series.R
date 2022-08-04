@@ -1,4 +1,10 @@
-#Check https://scientific-computing.netlify.app/09_population_models/09_time_series.html
+# --------------------------------------------------#
+# Scientific computing
+# ICTP/Serrapilheira 2022
+# Script to perform Time Series
+# For more explanations follow:
+# https://scientific-computing.netlify.app/09_population_models/09_time_series.html
+# --------------------------------------------------#
 
 
 library(dplyr)
